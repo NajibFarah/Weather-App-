@@ -1,0 +1,111 @@
+.appContainer {
+  width: 100%;
+  padding: 20px;
+}
+.contentContainer {
+  display: flex;
+  height: 100vh;
+}
+.weatherDataContainer {
+  width: 100%;
+  height: 100vh;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.container-box {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: url("../Assets/Weather-app.png");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.subContainer {
+  position: relative;
+  width: 100%;
+  overflow: auto;
+  height: 100%;
+}
+.login-box {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 30%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 20px #00000045;
+}
+.login-box h1 {
+  font-size: 24px;
+  margin-bottom: 14px;
+}
+.input_box {
+  width: 100%;
+}
+.form-label {
+	font-size: 15px;
+	margin-bottom: 5px;
+}
+.input-field {
+	border: 1px solid #0000002b;
+	width: 100%;
+	border-radius: 5px;
+	padding: 5px 10px;
+	margin-top: 10px;
+}
+.input-field:focus {
+  outline: none;
+}
+.button {
+	background: #4ADE80;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	width: 100%;
+	color: white;
+	padding: 7px;
+	border-radius: 5px;
+}
+.error-message {
+	color: red;
+	font-weight: 500;
+	font-size: 15px;
+	margin: 5px 0;
+}
+.App-link {
+  color: #61dafb;
+}
+.summaryUl {
+	margin-bottom: 45px;
+}
+
+@media (min-width: 300px) and (max-width: 724px) {
+  .contentContainer {
+    display: block;
+  }
+  .App-header {
+    display: block;
+  }
+  .SignUP {
+    width: 100%;
+  }
+  .form-label {
+    width: 100%;
+  }
+  .login-box {
+    width: 100%;
+  }
+}
